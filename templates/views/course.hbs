@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>University Website</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="#"><img src="image/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/course">COURSE</a></li>
+            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Our Courses</h1>
+    </section>
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            quibusdam, eum vero, tenetur rerum iste debitis odit, enim ullam
+            laborum asperiores suscipit deserunt.</p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            quibusdam, eum vero, tenetur rerum iste debitis odit, enim ullam
+            laborum asperiores suscipit deserunt.</p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+            quibusdam, eum vero, tenetur rerum iste debitis odit, enim ullam
+            laborum asperiores suscipit deserunt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities">
+      <h1>Our facilities</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="facilites-col">
+          <img src="image/library.png" alt="" />
+          <h3>World Class Library</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet
+            consectetur adipisicing elit</p>
+        </div>
+        <div class="facilites-col">
+          <img src="image/basketball.png" alt="" />
+          <h3>Largest Play Ground</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet
+            consectetur adipisicing elit</p>
+        </div>
+        <div class="facilites-col">
+          <img src="image/cafeteria.png" alt="" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet
+            consectetur adipisicing elit</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Doloribus
+        quidem ut quos expedita voluptate et at enim harum,
+        <br />est voluptas consequatur impedit rerum, reprehenderit, nisi
+        repellat aperiam deserunt temporibus illum!</p>
+
+      <div class="icons">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+      <p>Made With <i class="fas fa-heart"></i> By Easy Tutorials</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks"); function showMenu() {
+      navLinks.style.right = "0"; } function hideMenu() { navLinks.style.right =
+      "-200px"; }
+    </script>
+
+  </body>
+</html>

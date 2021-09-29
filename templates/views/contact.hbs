@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>University Website</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="#"><img src="image/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/course">COURSE</a></li>
+            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24828.803771954423!2d75.81120818315634!3d25.14457773611146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f835fcc2a9e43%3A0x69e74069e551d77d!2sRajasthan%20Technical%20University%20Kota!5e0!3m2!1sen!2sin!4v1632828249241!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fas fa-home"></i>
+            <span>
+              <h5>XYZ Road, ABC Building</h5>
+
+              <p>Bangalore, Karnataka, IN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-phone-volume"></i>
+            <span>
+              <h5>+1 0456789800</h5>
+              <p>Mondy to satuday, 10Am to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <span>
+              <h5>info@ajaywebdev.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="/contact" method="POST">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              required
+              name="name"
+            />
+            <input
+              type="email"
+              placeholder="Enter Email Address"
+              name="email"
+            />
+            <input
+              type="text"
+              placeholder="Enter Your Subject"
+              name="subject"
+            />
+            <textarea
+              rows="8"
+              placeholder="Message"
+              required
+              name="message"
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Doloribus
+        quidem ut quos expedita voluptate et at enim harum,
+        <br />est voluptas consequatur impedit rerum, reprehenderit, nisi
+        repellat aperiam deserunt temporibus illum!</p>
+
+      <div class="icons">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+      <p>Made With <i class="fas fa-heart"></i> By Easy Tutorials</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks"); function showMenu() {
+      navLinks.style.right = "0"; } function hideMenu() { navLinks.style.right =
+      "-200px"; }
+    </script>
+
+  </body>
+</html>
